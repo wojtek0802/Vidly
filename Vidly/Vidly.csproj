@@ -203,9 +203,22 @@
     <Compile Include="Migrations\201905121509350_SeedNameColumnInMembershipType.Designer.cs">
       <DependentUpon>201905121509350_SeedNameColumnInMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905121524290_AddNullableBirthDateToCustomer.cs" />
+    <Compile Include="Migrations\201905121524290_AddNullableBirthDateToCustomer.Designer.cs">
+      <DependentUpon>201905121524290_AddNullableBirthDateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905121718365_AddedGenreAndFewPropertiesToMovies.cs" />
+    <Compile Include="Migrations\201905121718365_AddedGenreAndFewPropertiesToMovies.Designer.cs">
+      <DependentUpon>201905121718365_AddedGenreAndFewPropertiesToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905121723206_PopulateGenre.cs" />
+    <Compile Include="Migrations\201905121723206_PopulateGenre.Designer.cs">
+      <DependentUpon>201905121723206_PopulateGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -276,6 +289,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -314,6 +328,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905121509350_SeedNameColumnInMembershipType.resx">
       <DependentUpon>201905121509350_SeedNameColumnInMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905121524290_AddNullableBirthDateToCustomer.resx">
+      <DependentUpon>201905121524290_AddNullableBirthDateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905121718365_AddedGenreAndFewPropertiesToMovies.resx">
+      <DependentUpon>201905121718365_AddedGenreAndFewPropertiesToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905121723206_PopulateGenre.resx">
+      <DependentUpon>201905121723206_PopulateGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
