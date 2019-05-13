@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201905121723206_PopulateGenre.Designer.cs">
       <DependentUpon>201905121723206_PopulateGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905131451505_ApplyDataAnnotationsToMovie.cs" />
+    <Compile Include="Migrations\201905131451505_ApplyDataAnnotationsToMovie.Designer.cs">
+      <DependentUpon>201905131451505_ApplyDataAnnotationsToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -290,6 +294,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -337,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905121723206_PopulateGenre.resx">
       <DependentUpon>201905121723206_PopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905131451505_ApplyDataAnnotationsToMovie.resx">
+      <DependentUpon>201905131451505_ApplyDataAnnotationsToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
