@@ -9,20 +9,24 @@ namespace Vidly.Models
     public class Movie
     {
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage ="The name is required")]
         public string Name { get; set; }
         
         public Genre Genre { get; set; }
 
-        [Required]
+        [Display(Name = "Genre")]
+        [Required(ErrorMessage ="Genre is required")]
         public byte GenreId { get; set; }
 
-        [Required]
+        [Display(Name = "Release Date")]
+        [Required(ErrorMessage ="The Release Date is required")]
         public DateTime ReleaseDate { get; set; }
 
         [Required]
         public DateTime DateAdded { get; set; }
 
+        [Range(1,20,ErrorMessage = "The number has to be between 1 and 20")]
+        [Display(Name = "Number In Stock")]
         [Required]
         public int NumberInStock { get; set; }
     }
